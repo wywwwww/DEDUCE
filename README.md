@@ -9,8 +9,8 @@
 
 NOTE: Datasets are automatically downloaded in data/.
 
-This can be changed by changing the base_path function in utils/conf.py or using the --base_path argument.
-The data/ folder should not be tracked by git and is created automatically if missing.
+- This can be changed by changing the base_path function in utils/conf.py or using the --base_path argument.
+- The data/ folder should not be tracked by git and is created automatically if missing.
 # Installation
 - To execute the codes for running experiments, run the following.
 ```bash
