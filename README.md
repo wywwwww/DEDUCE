@@ -13,7 +13,8 @@ This can be changed by changing the base_path function in utils/conf.py or using
 The data/ folder should not be tracked by git and is created automatically if missing.
 # Installation
 To execute the codes for running experiments, run the following.
-‘pip install -r requirements.txt’
+```bash
+pip install -r requirements.txt
 # Examples
 Run a model
 The following command will run the model derpp on the dataset seq-cifar100 with a buffer of 500 samples the some random hyperparameters for lr, alpha, and beta:
