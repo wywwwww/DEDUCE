@@ -15,8 +15,10 @@ The data/ folder should not be tracked by git and is created automatically if mi
 To execute the codes for running experiments, run the following.
 ```bash
 pip install -r requirements.txt
+```
 # Examples
 Run a model
 The following command will run the model derpp on the dataset seq-cifar100 with a buffer of 500 samples the some random hyperparameters for lr, alpha, and beta:
-
-‘python main.py --model derpp --dataset seq-cifar100 --alpha 0.5 --beta 0.5 --lr 0.001 --buffer_size 500’
+``` bash
+python utils/main.py --model derpp --dataset seq-cifar100 --alpha 0.5 --beta 0.5 --lr 0.001 --buffer_size 500
+```
