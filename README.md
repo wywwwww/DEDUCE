@@ -2,10 +2,10 @@
 # Package Requirements
 - Pytorch 1.12.1
 # Datasets
-- CIFAR-100 (available current version)
-- CIFAR-10 (available current version)
-- TinyImageNet (available current version)
-- COER-50 (available current version)
+- CIFAR-100
+- CIFAR-10
+- TinyImageNet
+- COER-50
 
 NOTE: Datasets are automatically downloaded in data/.
 
@@ -16,9 +16,15 @@ To execute the codes for running experiments, run the following.
 ```bash
 pip install -r requirements.txt
 ```
+New models can be added to the models/ folder.
+New datasets can be added to the datasets/ folder.
 # Examples
-Run a model
+# Run a model
 The following command will run the model derpp on the dataset seq-cifar100 with a buffer of 500 samples the some random hyperparameters for lr, alpha, and beta:
 ``` bash
 python utils/main.py --model derpp --dataset seq-cifar100 --alpha 0.5 --beta 0.5 --lr 0.001 --buffer_size 500
+```
+To run the model with the best hyperparameters, use the --model_config=best argument:
+``` bash
+python utils/main.py --model derpp --load_best_args --dataset seq-cifar100 --alpha 0.5 --beta 0.5 --lr 0.001 --buffer_size 500
 ```
