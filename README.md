@@ -25,7 +25,7 @@ The following command will run the model derpp on the dataset seq-cifar100 with 
 ``` bash
 python utils/main.py --model derpp --dataset seq-cifar100 --alpha 0.5 --beta 0.5 --lr 0.001 --buffer_size 500
 ```
-To run the model with the best hyperparameters, use the --model_config=best argument:
+To run the model with the best hyperparameters, use the --load_best_args:
 ``` bash
 python utils/main.py --model derpp --load_best_args --dataset seq-cifar100 --alpha 0.5 --beta 0.5 --lr 0.001 --buffer_size 500
 ```
