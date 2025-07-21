@@ -1,4 +1,5 @@
 # Detect, Decide, Unlearn: A Transfer-Aware Framework for Continual Learning (DEDUCE)
+This is the official implementation of DEDUCE in the paper in Pytorch.
 ## Package Requirements
 - Pytorch 1.12.1
 ## Datasets
